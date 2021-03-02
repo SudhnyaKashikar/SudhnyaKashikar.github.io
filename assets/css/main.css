@@ -96,6 +96,7 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+#more {display: none;}
 
 	body, input, select, textarea {
 		color: #a2a2a2;

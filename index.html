@@ -9,7 +9,27 @@
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<style body { padding-top: 70px; }></style>
+		<script>
+		function myFunctionClick() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+		  
+			if (dots.style.display === "none") {
+			  dots.style.display = "inline";
+			  btnText.innerHTML = "Read more";
+			  moreText.style.display = "none";
+			} else {
+			  dots.style.display = "none";
+			  btnText.innerHTML = "Read less";
+			  moreText.style.display = "inline";
+			}
+		  }</script>
 	</head>
 	<body class="is-preload">
 
@@ -36,6 +56,64 @@
 
 			</header>
 
+			<!-- FROM HERE -->
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#" style="border-bottom: none">Sudhnya Kashikar</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent" style=" float: none;
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  transform: translate(-50%, -50%);">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<!-- <a class="nav-link active" aria-current="page" href="#three" style="border-bottom: none">Home</a> -->
+						<a class="nav-link" aria-current="page" href="#" style="border-bottom: none; ">About me</a>
+
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#two" style="border-bottom: none">Work Experience</a>
+					  </li>
+					  
+					  <li class="nav-item">
+						<a class="nav-link" href="#three" style="border-bottom: none">Acedemic Projects</a>
+					  </li>
+					  
+					  <!--<li class="nav-item">
+						<a class="nav-link" href="#four" style="border-bottom: none">Hobbies</a>
+					  </li>-->
+					  <li class="nav-item">
+						<a class="nav-link" href="#five" style="border-bottom: none">Acomplishments</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#six" style="border-bottom: none">Get in touch</a>
+					  </li>
+					  <!-- <li class="nav-item dropdown" style="border-bottom: none">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="#">Action</a></li>
+						  <li><a class="dropdown-item" href="#">Another action</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					  </li> -->
+					</ul>
+				  </div>
+				</div>
+			  </nav>
+
+
+
+<!-- TO HERE -->
+
 		<!-- Main -->
 			<div id="main">
 
@@ -53,10 +131,13 @@
 						</header>
 						<p> I am a passionate Computer Science Engineer and pursuing my Master’s in Informatics- Data Analytics from Northeastern University. My field of interests are Data Analytics, Database management systems, Visualization, Graphic designing, and Animation. I am seeking job opportunities in these fields.
 
-							I have worked on projects based on Data Analysis and Predictive Modelling such as Data Mining on New York City Airbnb dataset, Weather prediction Model, Heart disease prediction, Adaptive Questionnaire and College Feedback App.
+							I have worked on projects based on Data Analysis and Predictive Modelling such as Data Mining on New York City Airbnb dataset, Weather prediction Model, Heart disease prediction, Adaptive Questionnaire and College Feedback App.<span id="dots">...</span><span id="more">I have worked as a Data Scientist Intern at Elphi in Boston USA, Deep Learning Intern and Web Designing Intern at different companies in India. I have also worked as a Graduate Teaching Assistant at Northeastern University. I have been a part of various committees in my college and university life which has helped in developing and improving my Communication, Management and Leadership skills.
+								My technical skills include fluency in C, C++, Java, Python, R, R Shiny, MS office, PHP, SQL, Tableau, Google Analytics, Google Data Studio, Firebase and still learning more.
+								
+								I believe that the skills that I have and the ones that I have attained from the dynamic environment and competitive university life defines me and I am looking forward to implementing them and polishing them in any opportunity that I receive.</span>
 							</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="#" id="myBtn" class="button" onclick="myFunctionClick()">Read More</a></li>
 						</ul>
 					</section>
 
@@ -66,7 +147,7 @@
 					<section id="two">
 						<h2>Professional Experience</h2>
 						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3>Data Scientist Intern at Elphi.inc (Sept 2020 - Dec 2020)</h3>
 								<p> I was a Data Scientist Intern at Elphi.inc, a start up company in Boston. My job there was to track the user activity by creating customized Events and Performance tracking in Firebase console for company’s software for better understanding and improving the user experience.
@@ -75,7 +156,7 @@
 									Manipulated the large CSV dataset to create useful reports, working with JSON and React.
 									</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Graduate Teaching Assistant at Northeastern University (May 2020 - Aug 2020)</h3>
 								<p> I was appointed as the Graduate Teaching Assistant in Northeastern University, Boston. I role was to assist the professors and the students for "Database Websites" course and "Structured Query Language (SQL)" course.
@@ -83,22 +164,22 @@
 									Helped the professors for grading the assignments and the course work.
 									</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Residential Security Office Proctor at Northeastern University (Dec 2020 - April 2021)</h3>
 								<p>I am working as a RSO proctor at Northeastern University. My role is to </p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>College of Professional Studies Proctor at Northeastern University (Sept 2020 - May 2021)</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Cashier at Wollaston's - Northeastern University (Oct 2019 - July 2021)</h3>
 								<p> I got an opportunity do work on-campus as a cashier at Wollaston's Grocery store in Northeastern University, Boston. My role here is to manage the financial transactions and provide proper customer service thus, leading to good customer experience and improved communication plus management skills.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Deep Learning Intern at Center of Excellence in AI/ML (Nov 2018 - May 2019)</h3>
 								<p> Worked as a Deep Learning Intern at Center of Excellence in AI/ML lab at G.H. Raisoni college of Engineering Nagpur, India. My role was to program new skills for the Amazon Alexa in AWS using Node JS and JSON.
@@ -107,14 +188,14 @@
 									
 									</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Web Designing Intern at Programming Tree (Nov 2018 - May 2019)</h3>
 								<p> Worked as a Web Designing Intern at Programming Tree company, India. I led a team of 4 to develop an "Adaptive Questionnaire" using the fundamental algorithms of Machine Learning. It consisted of three levels of tests, Easy, Medium and Difficult. We used Logistic regression and based on the "0's" and "1's" the Adaptive Questionnaire reacted.
 									Utilized the knowledge of Bootstrap framework, PHP, and MySQL for building the web application.
 									</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
 								<h3>Java Programming Intern at Networks Hub (July 2017 - Aug 2017 )</h3>
 								<p> I was working as a Java Programming Intern at Networks Hub, India for one month. I have applied and executed the Core Java Applications for developing an "Employee Salary Calculation system" in Java.</p>
@@ -129,32 +210,32 @@
 					<section id="two">
 						<h2>Academic Projects</h2>
 						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3>Data Analysis on NYC Airbnb</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Ultricies lacinia interdum</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Tortor metus commodo</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Quam neque phasellus</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
 								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
 								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -174,32 +255,32 @@
 					<section id="two">
 						<h2>Hobies</h2>
 						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3>Drawing and Painting</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Playing sports</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Public Speaking</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Playing Ukulele</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
 								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
 								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -215,32 +296,32 @@
 					<section id="two">
 						<h2>Accomplishhments and Leadership Experience </h2>
 						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3>Football Girls Team captain (In School 9th grade)</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>President First year forum FAITH (In 1st year of Engineering)</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Student Representative Committee (SRC) Member (In 2nd year of Engineering)</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>IEEE Computer Scoiety Chapter Member (In 2nd year of Engineering)</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
 								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-4 col-8-xsmall work-item">
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
 								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
